@@ -27,4 +27,4 @@ package: legacy
 	dpkg --build legacy-$(VERSION)
 	
 clean:
-	rm *.o legacy
+	rm -rf *.o legacy legacy-$(VERSION).deb legacy-$(VERSION)
