@@ -20,7 +20,7 @@ package: legacy
 	Priority: optional\n\
 	Architecture: all\n\
 	Essential: no\n\
-	Installez-size: 1024\n\
+	Installed-size: 1024\n\
 	Maintainer: Brian McManus <bmcmanus@gmail.com>\n\
 	Description: ACME Inc Legacy Server (C) 1999-2012" > legacy-$(VERSION)/DEBIAN/control
 	$(CP) legacy legacy-$(VERSION)/usr/local/bin
