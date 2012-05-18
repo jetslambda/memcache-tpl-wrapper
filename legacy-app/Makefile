@@ -23,7 +23,7 @@ package: legacy
 	Installed-size: 1024\n\
 	Maintainer: Brian McManus <bmcmanus@gmail.com>\n\
 	Description: ACME Inc Legacy Server (C) 1999-2012" > legacy-$(VERSION)/DEBIAN/control
-	$(CP) legacy legacy-$(VERSION)/usr/local/bin
+	$(CP) legacy legacy-$(VERSION)/usr/local/bin/legacy-$(VERSION)
 	dpkg --build legacy-$(VERSION)
 	
 clean:
