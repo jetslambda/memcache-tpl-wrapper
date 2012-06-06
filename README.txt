@@ -4,11 +4,12 @@ Open source, but not an "open source project"
   "I am sharing my code. I am not launching an open source project." -- Alan Gutierrez
 
 Notes
- - memcache_api.h is the end product, example.c/h and macrotest were iterative evolutions.
+ - memcache_api.h is the end product, example.c/h and macrotest were iterative evolutions. Some of the previous iterations may not compile.
  - Does not appear to have a memory leak per my latest valgrind but may have some opportunities.  If so, send me a pull request!
  - Definitely has some opportunities for errno, return/"exception" checking.
  - This project is not thread-safe.
  - It now supports linked lists.
+ - Now supports variadic parameters to the function macros.  This is for c# MAP expansion.
  - It hasn't been cleaned up.  It has a lot of opportunities but I think sharing it is more important than it being perfect.
 
 License

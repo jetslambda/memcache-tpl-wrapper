@@ -5,7 +5,7 @@
 ;+
 * Module:		memcache_api
 *
-* Purpose:	Provides macro to serialize, store, fetch and deserialize objects
+* Purpose:		Provides macro to serialize, store, fetch and deserialize objects
 * 			from memcache. Uses TPL and Memcached.
 *
 * APIs:
@@ -32,14 +32,14 @@
 *	 - Clean-up objects/structures related to TPL and Memcache
 *
 * Required Libraries:
-* 	libmemcached	(memcached c interface)
-* 	tpl				(serialization library)
+* 	libmemcached		(memcached c interface)
+* 	tpl			(serialization library)
 *
 * Notes:
-*  Now supports linked lists.
-*  May not support other array types at this time.
-*  Performed quite a few valgrind tests on it.  Appears to free all of the
-*  memory the wrapper allocates.
+*  - Now supports linked lists.
+*  - May not support other array types at this time.
+*  - Performed quite a few valgrind tests on it.  Appears to free all of the
+*    memory the wrapper allocates.
 *
 * Author:		Brian McManus <bmcmanus@gmail.com>
 ;-

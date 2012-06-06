@@ -30,8 +30,8 @@
 *
 * Required Libraries:
 * 	lrt 			(time, only unit tests require this)
-* 	libmemcached	(memcached c interface)
-* 	tpl				(serialization library)
+* 	libmemcached		(memcached c interface)
+* 	tpl			(serialization library)
 *
 * Notes:
 *  Now supports linked lists.
@@ -43,7 +43,7 @@
 * gcc -gdwarf-2 -g3 -c -g -I. -D_MAIN_ -I../include memcache_api.c
 * gcc -D_MAIN_ -gdwarf-2 -g3 -Wl,-rpath,/usr/lib -g -I. -lrt -ltpl -lmemcached -o memcache_api memcache_api.o -L/usr/lib
 * ./memcache_api
-* // -> to test linking problems gcc -v -Wl,-rpath,/usr/lib -Wl,-m,elf_x86_64 -Wl,-m,elf_x86_64 -g -I. -ltpl -lmemcached -o memcache_api memcache_api.c -L/usr/lib
+*   -> to test linking problems gcc -v -Wl,-rpath,/usr/lib -Wl,-m,elf_x86_64 -Wl,-m,elf_x86_64 -g -I. -ltpl -lmemcached -o memcache_api memcache_api.c -L/usr/lib
 ********************************************************************************
 */
 
