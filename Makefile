@@ -4,16 +4,16 @@
 
 CC=gcc
 CP=cp
-CFLAGS=-Wall -g -I. -D_MAIN_ -ltpl -lmemcached
+CFLAGS=-g -I. -D_MAIN_ -lrt -ltpl -lmemcached
 VERSION=1.0
 
-all: example macrotest memcache_api
+all: example memcache_api
 
 example: example.o
 	$(CC) $(CFLAGS) -o example example.o
 
-macrotest: macrotest.o
-	$(CC) $(CFLAGS) -o macrotest macrotest.o
+#macrotest: macrotest.o
+#	$(CC) $(CFLAGS) -o macrotest macrotest.o
 
 memcache_api: memcache_api.o
 	$(CC) $(CFLAGS) -o memcache_api memcache_api.o

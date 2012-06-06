@@ -5,10 +5,10 @@ Open source, but not an "open source project"
 
 Notes
  - memcache_api.h is the end product, example.c/h and macrotest were iterative evolutions.
- - May have a memory leak or two. I haven't made sure it cleans up after itself nor does it do as many exception checks
-   as it should. Please consider it alpha quality =P
+ - Does not appear to have a memory leak per my latest valgrind but may have some opportunities.  If so, send me a pull request!
+ - Definitely has some opportunities for errno, return/"exception" checking.
  - This project is not thread-safe.
- - At this time it does not support linked lists (yet.)
+ - It now supports linked lists.
  - It hasn't been cleaned up.  It has a lot of opportunities but I think sharing it is more important than it being perfect.
 
 License
